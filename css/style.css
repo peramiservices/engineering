@@ -494,8 +494,7 @@ section {
 
 .contact .row form h3 {
   font-size: 1.7rem;
-  color: var(--black);
- 
+  color: var(--black); 
 }
 
 .contact .row form .box {
