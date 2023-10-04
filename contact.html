@@ -61,17 +61,33 @@
  
     
  
-      <form action="send_email.php" method="POST">
-
-          <h3>get in touch</h3>
-          <input type="text" placeholder="name" class="box">
-          <input type="email" placeholder="e-mail address" class="box">
-          <input type="number" placeholder="contact number" class="box">
-          <textarea name="" placeholder="message" class="box" id="" cols="30" rows="10"></textarea>
-          <input type="submit" value="send message" class="btn">
-       </form>
+      <form onsubmit="sendEmail(); reset(); return false;">
+         <h3>Get in touch</h3>
+         <input type="text" id="name" placeholder="Name" required class="box">
+         <input type="email" id="email" placeholder="E-mail address" required class="box">
+         <input type="text" id="contact_number" placeholder="Contact number" required class="box">
+         <textarea id="message" placeholder="Message" required class="box"   cols="30" rows="10"></textarea>
+         <button type="submit">send</button>
+      </form>
  
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+   </script>
+   <script>
+      function sendEmail(){
+         Email.send({
+           SecureToken:"41b4dc9c-4ed0-4caf-bbf5-e11f6328d857",
+      
+          To : 'peramiservices@gmail.com',
+          From : document.getElementById("email").value,
+          Subject : "Client's Enquiry",
+          Body : "Name:" + document.getElementById("name").value +"<br> Email:" + document.getElementById("email").value +
+          "Contact Number:" + document.getElementById("phone").value+"<br> Message:" + document.getElementById("message").value
+      }).then(
+        message => alert("Message Sent Successfully")
+      );
+      }
+      </script>
  
  </section>
  
@@ -94,9 +110,7 @@
  
  <!-- footer section ends -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
+ 
+
 </body>
 </html>
