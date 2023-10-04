@@ -495,7 +495,7 @@ section {
 .contact .row form h3 {
   font-size: 1.7rem;
   color: var(--black);
-  text-transform: capitalize;
+  
 }
 
 .contact .row form .box {
