@@ -495,7 +495,7 @@ section {
 .contact .row form h3 {
   font-size: 1.7rem;
   color: var(--black);
-  
+ 
 }
 
 .contact .row form .box {
@@ -505,7 +505,7 @@ section {
   border-bottom: var(--border);
   font-size: 1.4rem;
   color: var(--light-color);
-  text-transform: capitalize;
+   
 }
 
 .contact .row form .box:focus {
