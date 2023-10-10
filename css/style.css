@@ -205,7 +205,7 @@ section {
 }
 
 .contact-info .info i:hover {
-  background: var(--white);
+  background: var(--black);
   color: var(--white);
 }
 
