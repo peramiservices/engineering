@@ -131,19 +131,19 @@ section {
 
 .header .icons div {
   height: 5rem;
-  width: 10rem;
-  line-height: 5rem;
-  font-size: 2rem;
-  background: var(--black);
-  color: var(--yellow);
+  width: 15rem;
+  line-height: 7rem;
+  font-size: 7rem;
+  background: var(--white);
+  color: var(--black);
   cursor: pointer;
   text-align: center;
   margin-left: .3rem;
 }
 
 .header .icons div:hover {
-  background: var(--yellow);
-  color: var(--black);
+   
+  color: var(--yellow);
 }
 
 .header #menu-btn {
@@ -205,7 +205,7 @@ section {
 }
 
 .contact-info .info i:hover {
-  background: var(--black);
+  background: var(--white);
   color: var(--white);
 }
 
@@ -494,7 +494,8 @@ section {
 
 .contact .row form h3 {
   font-size: 1.7rem;
-  color: var(--black); 
+  color: var(--black);
+  text-transform: capitalize;
 }
 
 .contact .row form .box {
@@ -504,7 +505,7 @@ section {
   border-bottom: var(--border);
   font-size: 1.4rem;
   color: var(--light-color);
-   
+  text-transform: capitalize;
 }
 
 .contact .row form .box:focus {
@@ -623,7 +624,9 @@ section {
 }
 #info-btn::before {
   content: "CONTACT US";
-  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.32rem;
+  font-size: 1.32rem;
   align-content: center;
 }
 #info-btn {
