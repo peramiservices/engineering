@@ -505,7 +505,7 @@ section {
   border-bottom: var(--border);
   font-size: 1.4rem;
   color: var(--light-color);
-  text-transform: capitalize;
+   
 }
 
 .contact .row form .box:focus {
