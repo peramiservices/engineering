@@ -1,136 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PERAMI ENGINEERING SERVICES - Contact</title>
-    <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
-   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="icon" href="favicon.ico" type="image/x-icon">
-   
-    <script src="index.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PERAMI ENGINEERING SERVICES - Contact</title>
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("x-bbD9IgMFXkeIbeu");
-      })();
-    </script>
-    
-  </head>
-  <body>
-    <!-- header section starts  -->
-    
-<header class="header">
-  <a href="#" class="logo">
-     <img src="images/logo.png" alt="Your Logo">
-  </a>
-  <nav class="navbar">
-     <a href="index.html">HOME</a>
-     <a href="about.html">ABOUT</a>
-     <a href="services.html">SERVICES</a>
-     <a href="contact.html">MESSAGE US</a>
-  </nav>
-  <div class="icons">
-     <div id="menu-btn" class="fas fa-bars"></div>
-     <div id="info-btn" class="fas fa-info-circle"></div>
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <script src="index.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("x-bbD9IgMFXkeIbeu");
+    })();
+  </script>
+
+</head>
+
+<body>
+  <!-- header section starts  -->
+
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="images/logo.png" alt="Your Logo">
+    </a>
+    <nav class="navbar">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="services.html">SERVICES</a>
+      <a href="contact.html">MESSAGE US</a>
+    </nav>
+    <div class="icons">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="info-btn" class="fas fa-info-circle"></div>
+    </div>
+  </header>
+
+  <div class="contact-info">
+    <div id="close-contact-info" class="fas fa-times"></div>
+    <div class="info">
+      <i class="fas fa-envelope"></i>
+      <h3>email address</h3>
+      <p1>peramiservices@gmail.com</p1>
+    </div>
+    <div class="info">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>office address</h3>
+      <p>PERAMI ENGINEERING SERVICES</p>
+      <p1>Marigondon, Lapu-Lapu City, Cebu, Philippines</p1>
+      <p2>Business Permit:0180218</p2>
+    </div>
   </div>
-</header>
 
-<div class="contact-info">
-  <div id="close-contact-info" class="fas fa-times"></div>
-  <div class="info">
-     <i class="fas fa-envelope"></i>
-     <h3>email address</h3>
-     <p1>peramiservices@gmail.com</p1>
-  </div>
-  <div class="info">
-     <i class="fas fa-map-marker-alt"></i>
-     <h3>office address</h3>
-     <p>PERAMI ENGINEERING SERVICES</p>
-     <p1>Marigondon, Lapu-Lapu City, Cebu, Philippines</p1>
-     <p2>Business Permit:0180218</p2>
-  </div>
-</div>
+  <!-- header section ends -->
+  <!-- contact section starts  -->
 
-<!-- header section ends -->
-<!-- contact section starts  -->
+  <section class="contact" id="contact">
 
-<section class="contact" id="contact">
+    <h1 class="heading">
+      <Message Us>
+    </h1>
 
-    <h1 class="heading"><Message Us></h1>
- 
     <div class="row">
       <span id="currentDate"></span>
 
-     
+
+      <form>
+        <h5 for="name">
+          <h3>Name</h3>
+        </h5>
+        <input type="text" class="box" id="name" placeholder="Enter your name" />
+        <form>
+
           <form>
-            <h5 for="name"><h3>Name</h3> </h5>
-            <input
-              type="text"
-              class="box"
-              id="name"
-              placeholder="Enter your name"
-            />
-          <form>
-          
-          <form>
-            <h5 for="email"><h3>Email</h3> </h5>
-            <input
-              type="email"
-              class="box"
-              id="email"
-              placeholder="Enter your email address"
-            />
-          <form>
-          <form>
-            <h5 for="number"><h3>Contact Number</h3> </h5>
-            <input
-              type="number"
-              class="box"
-              id="number"
-              placeholder="Enter your Contact Number"
-            />
-          <form>
-          <form>
-            <h5 for="message"><h3>Message</h3> </h5>
-            <textarea class="box" id="message" placeholder="Your message here..." rows="3"></textarea>
-          </form> 
-          
-        </div>
-        <div class="row">
-           <button  class="btn" onclick="sendMail()">Send Message</button> 
-          
-        </div>
+            <h5 for="email">
+              <h3>Email</h3>
+            </h5>
+            <input type="email" class="box" id="email" placeholder="Enter your email address" />
+            <form>
+              <form>
+                <h5 for="number">
+                  <h3>Contact Number</h3>
+                </h5>
+                <input type="number" class="box" id="number" placeholder="Enter your Contact Number" />
+                <form>
+                  <form>
+                    <h5 for="message">
+                      <h3>Message</h3>
+                    </h5>
+                    <textarea class="box" id="message" placeholder="Your message here..." rows="3"></textarea>
+                  </form>
+
+    </div>
+    <div class="row">
+      <button class="btn" onclick="sendMail()">Send Message</button>
+
+    </div>
     <!-- footer section starts  -->
   </section>
-<section class="footer">
+  <section class="footer">
 
-   
-  <div class="share">
-     <a href="#" class="fab fa-facebook-f"></a>
-     <a href="#" class="fab fa-instagram"></a>
-     <a href="#" class="fab fa-linkedin"></a>
-  </div>
 
-  <div class="credit"><span> PERAMI</span>™ </span> | all rights reserved! </div>
-  
+    <div class="share">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+    </div>
 
-</section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
+    <div class="credit"><span> PERAMI</span>™ </span> | all rights reserved! </div>
 
-<!-- footer section ends -->z
-  </body>
+
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- custom js file link  -->
+  <script src="js/script.js"></script>
+
+  <!-- footer section ends -->z
+</body>
+
 </html>
